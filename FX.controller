@@ -87,7 +87,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Start Write
+  m_Name: Start Float
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -101,7 +101,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1f403bbdbeb349c4f807df6591a9e669, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9a4f044f76ad8426a9223ee7e6de82ed, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -129,7 +129,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1f403bbdbeb349c4f807df6591a9e669, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9a4f044f76ad8426a9223ee7e6de82ed, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -158,7 +158,7 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Particle Death
+    m_Name: ParticleDeath
     m_StateMachine: {fileID: 1107392934222790524}
     m_Mask: {fileID: 0}
     m_Motions: []
@@ -3512,7 +3512,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Particle Death
+  m_Name: ParticleDeath
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -4588687399781699090}
@@ -3679,7 +3679,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1f403bbdbeb349c4f807df6591a9e669, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9a4f044f76ad8426a9223ee7e6de82ed, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
