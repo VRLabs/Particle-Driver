@@ -41,8 +41,7 @@ The Particle Driver.prefab should go to the base of your Unity scene, which will
 
 Unpack the prefab by right-clicking it and move the prefab to base of your avatar.
 
-Expand the prefab, and locate Particle Driver/Particle System. ...
-
+... WIP
 
 Use the [Fix Order](https://github.com/VRLabs/VRChat-Avatars-3.0/releases/download/1/FixOrder.unitypackage) script before uploading or testing. Open VRLabs from the menu bar. Click "Fix Order". Run it again any time the layers related to this package change index order in your FX or Gesture controllers. This is so particle death controllers can reference the correct layers in their VRC Animator Layer Control state behaviors.
 
