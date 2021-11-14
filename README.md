@@ -35,7 +35,7 @@ After being re-enabled by "Stay Active.controller" on "Particle Driver", "Weight
 
 A "ParticleDeath" layer animates a float parameter multiplied by [Animator Layer Control](https://docs.vrchat.com/docs/state-behaviors) state behaviors in "Weight.controller". 
 
-The float parameter changes can be used as transition conditions, facilitating animation on particle death.
+The float parameter change can be used as a transition condition, facilitating animation on particle death.
 
 ## Install guide
 
