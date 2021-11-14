@@ -29,7 +29,13 @@
 
 ## How it works
 
-The Particle System [Stop Action](https://docs.unity3d.com/ScriptReference/ParticleSystemStopAction.html) option is used to reset an animator. The animator uses [Animator Layer Control](https://docs.vrchat.com/docs/state-behaviors) to change parameters within playable layers.
+The "Particle System" object is disabled on particle death via [Stop Action](https://docs.unity3d.com/ScriptReference/ParticleSystemStopAction.html).
+
+After being re-enabled by "Stay Active.controller" on "Particle Driver", "Weight.controller" on "Particle System" is reset.
+
+A "ParticleDeath" layer animates a float parameter multiplied by [Animator Layer Control](https://docs.vrchat.com/docs/state-behaviors) state behaviors in "Weight.controller". 
+
+The float parameter changes can be used as transition conditions, facilitating animation on particle death.
 
 ## Install guide
 
@@ -37,17 +43,35 @@ Testing in Unity requires the [3.0 emulator by Lyuma](https://github.com/lyuma/A
 
 Merge the FX controller to your own FX controller, using the [Avatars 3.0 Manager](https://github.com/VRLabs/VRChat-Avatars-3.0/releases/download/1/AV3Manager.unitypackage) tool.
  
-The Particle Driver.prefab should go to the base of your Unity scene, which will give it base Unity scaling.
+"Particle Driver.prefab" should go to the base of your Unity scene, which will give it base Unity scaling.
 
-Unpack the prefab by right-clicking it and move the prefab to base of your avatar.
+Unpack the prefab by right-clicking it.
 
-... WIP
+Remove "Collider" outside of "Particle Driver" and place it in your avatar's hierarchy as needed. 
 
-Use the [Fix Order](https://github.com/VRLabs/VRChat-Avatars-3.0/releases/download/1/FixOrder.unitypackage) script before uploading or testing. Open VRLabs from the menu bar. Click "Fix Order". Run it again any time the layers related to this package change index order in your FX or Gesture controllers. This is so particle death controllers can reference the correct layers in their VRC Animator Layer Control state behaviors.
+"Particle System" should remain under "Particle Driver". Place "Particle Driver" anywhere in your avatar's hierarchy, as needed.
+
+Adjust the transforms of "Particle System" and "Collider" to your taste.
+
+Use the [Fix Order](https://github.com/VRLabs/VRChat-Avatars-3.0/releases/download/1/FixOrder.unitypackage) script. Open VRLabs from the menu bar. Click "Fix Order".
+
+## How to use
+
+The merged "ParticleDeath" layer is provided for you as a template. By itself, it animates nothing except the float parameter. You should use this layer to run [Parameter Driver](https://docs.vrchat.com/docs/state-behaviors).
+
+To avoid avatar initialization side-effects, the default state is "Init". This state plays a 60 frame Buffer.anim and then checks for IsLocal == True.
+
+"Start Float" plays "Float.anim". Every state after "Start Float" should also play "Float.anim". To skip the first entry of "Max Weight" when the avatar loads, this state transitions to "Idle" when "Min Weight" is run by "Weight.controller".
+
+"Idle" is the state you want to work from. Transition from here to states which drive synced parameters. Use the synced parameter changes in other layers to animate globally.
+
+ParticleDeath < 1.0 means the Particle System is alive.
+
+ParticleDeath > 0.1 means the Particle System is dying.
 
 ## Downloads
 
-You can grab the latest version of the Particle Driver Constraint in [Releases](https://github.com/VRLabs/Particle-Driver/releases/latest).
+You can grab the latest version of the Particle Driver in [Releases](https://github.com/VRLabs/Particle-Driver/releases/latest).
 
 ## License
 
