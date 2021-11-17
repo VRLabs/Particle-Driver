@@ -1,4 +1,4 @@
-<div align="center">
+<div>
   <h1>Particle Driver</h1>
   <p>
      A method for animating on particle death.
