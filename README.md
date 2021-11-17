@@ -41,7 +41,7 @@ The float parameter change can be used as a transition condition, facilitating a
 
 Testing in Unity requires the [3.0 emulator by Lyuma](https://github.com/lyuma/Av3Emulator).
 
-Merge the FX controller to your own FX controller, using the [Avatars 3.0 Manager](https://github.com/VRLabs/Avatars-3.0-Manager/releases/latest) tool.
+Merge the FX controller to your own FX controller, using the [Avatars 3.0 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) tool.
  
 "Particle Driver.prefab" should go to the base of your Unity scene, which will give it base Unity scaling.
 
@@ -53,7 +53,7 @@ Remove "Collider" outside of "Particle Driver" and place it in your avatar's hie
 
 Adjust the transforms of "Particle System" and "Collider" to your taste.
 
-Use the [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool/releases/latest) script. Open VRLabs from the menu bar. Click "Apply Weight Controls".
+Use the [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool/) script. Open VRLabs from the menu bar. Click "Apply Weight Controls".
 
 ## How to use
 
