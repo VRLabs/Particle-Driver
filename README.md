@@ -41,7 +41,7 @@ The float parameter change can be used as a transition condition, facilitating a
 
 Testing in Unity requires the [3.0 emulator by Lyuma](https://github.com/lyuma/Av3Emulator).
 
-Merge the FX controller to your own FX controller, using the [Avatars 3.0 Manager](https://github.com/VRLabs/VRChat-Avatars-3.0/releases/download/1/AV3Manager.unitypackage) tool.
+Merge the FX controller to your own FX controller, using the [Avatars 3.0 Manager](https://github.com/VRLabs/Avatars-3.0-Manager/releases/latest) tool.
  
 "Particle Driver.prefab" should go to the base of your Unity scene, which will give it base Unity scaling.
 
