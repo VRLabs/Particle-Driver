@@ -53,7 +53,7 @@ Remove "Collider" outside of "Particle Driver" and place it in your avatar's hie
 
 Adjust the transforms of "Particle System" and "Collider" to your taste.
 
-Use the [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool/) script. Open VRLabs from the menu bar. Click "Apply Weight Controls".
+Use the [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool/). Open VRLabs from the menu bar. Click "Apply Weight Controls".
 
 ## How to use
 
