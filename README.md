@@ -33,6 +33,7 @@ Here is a map of the hierarchy:
 
 ```
 Your Avatar ("ParticleDeath" layer)
+...
 - Particle Driver (Stay Active.controller)
 -- Particle System (Weight.controller)
 -- Collider
