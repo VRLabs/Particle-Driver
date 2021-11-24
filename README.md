@@ -45,7 +45,7 @@ The "Particle System" object is disabled on particle death via [Stop Action](htt
 
 "Weight.controller" uses [Animator Layer Control](https://docs.vrchat.com/docs/state-behaviors) to change the weight of the "ParticleDeath" layer.
 
-The "ParticleDeath" layer animates a float parameter. The parameter is multiplied by the weight and the value change can be used as a transition condition.
+The "ParticleDeath" layer animates a float parameter. The parameter value is multiplied by the weight and can be used as a transition condition.
 
 ## Install guide
 
