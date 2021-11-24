@@ -29,13 +29,20 @@
 
 ## How it works
 
-The "Particle System" object is disabled on particle death via [Stop Action](https://docs.unity3d.com/ScriptReference/ParticleSystemStopAction.html).
+Here is a map of the hierarchy:
 
-After being re-enabled by "Stay Active.controller" on "Particle Driver", "Weight.controller" on "Particle System" is reset.
+Your Avatar (Merged "ParticleDeath" layer)
+- Particle Driver (Stay Active.controller)
+-- Particle System (Weight.controller, Particle System)
+-- Collider (Box Collider)
 
-A "ParticleDeath" layer animates a float parameter multiplied by [Animator Layer Control](https://docs.vrchat.com/docs/state-behaviors) state behaviors in "Weight.controller". 
+The "Stay Active.controller" animates "Particle System" on, to re-enable it immediately after it's been disabled.
 
-The float parameter change can be used as a transition condition, facilitating animation on particle death.
+The "Particle System" object is disabled on particle death via [Stop Action](https://docs.unity3d.com/ScriptReference/ParticleSystemStopAction.html). When re-enabled, the "Weight.controller" will reset.
+
+"Weight.controller" uses [Animator Layer Control](https://docs.vrchat.com/docs/state-behaviors) to change the weight of the "ParticleDeath" layer.
+
+The "ParticleDeath" layer animates a float parameter. The parameter is multiplied by the weight and the value change can be used as a transition condition.
 
 ## Install guide
 
@@ -57,7 +64,7 @@ Use the [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool/). Open 
 
 Testing in Unity requires the [3.0 emulator by Lyuma](https://github.com/lyuma/Av3Emulator).
 
-The merged "ParticleDeath" layer is provided for you as a template. By itself, it animates nothing except the float parameter. You should use this layer to run [Parameter Driver](https://docs.vrchat.com/docs/state-behaviors).
+The merged "ParticleDeath" layer is provided for you in the "FX.controller" as a template. Build your own logic and use this layer to run [Parameter Driver](https://docs.vrchat.com/docs/state-behaviors).
 
 To avoid avatar initialization side-effects, the default state is "Init". This state plays a 60 frame Buffer.anim and then checks for IsLocal == True.
 
