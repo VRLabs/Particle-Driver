@@ -33,9 +33,9 @@ Here is a map of the hierarchy:
 
 ```
 Your Avatar ("ParticleDeath" layer)
-  Particle Driver (Stay Active.controller)
-    Particle System (Weight.controller)
-    Collider
+- Particle Driver (Stay Active.controller)
+-- Particle System (Weight.controller)
+-- Collider
 ```
 
 The "Stay Active.controller" animates "Particle System" on, to re-enable it immediately after it's been disabled.
