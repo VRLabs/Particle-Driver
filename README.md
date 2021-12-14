@@ -69,7 +69,7 @@ Testing in Unity requires the [3.0 emulator by Lyuma](https://github.com/lyuma/A
 
 The merged "ParticleDeath" layer is provided for you in the "FX.controller" as a template. Build your own logic and use this layer to run [Parameter Driver](https://docs.vrchat.com/docs/state-behaviors).
 
-To avoid avatar initialization side-effects, the default state is "Init". This state plays a 60 frame Buffer.anim and then checks for IsLocal == True.
+To avoid avatar initialization side-effects, the default state is "Init". This state plays a 60 frame "Buffer.anim" and then checks for IsLocal == True.
 
 "Start Float" plays "Float.anim". Every state after "Start Float" should also play "Float.anim". To skip the first entry of "Max Weight" when the avatar loads, this state transitions to "Idle" when "Min Weight" is run by "Weight.controller".
 
