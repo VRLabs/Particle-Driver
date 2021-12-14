@@ -47,6 +47,8 @@ The "Particle System" object is disabled on particle death via [Stop Action](htt
 
 The "ParticleDeath" layer animates a float parameter. The parameter value is multiplied by the weight and can be used as a transition condition.
 
+In short: Weight.controller resets when the particle dies, which changes a parameter value.
+
 ## Install guide
 
 Merge the FX controller to your own FX controller, using the [Avatars 3.0 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) tool.
