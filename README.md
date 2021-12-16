@@ -67,7 +67,7 @@ Use the [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool/). Open 
 
 ## How to use
 
-Testing in Unity requires the [3.0 emulator by Lyuma](https://github.com/lyuma/Av3Emulator).
+Testing in Unity requires the [3.0 emulator by Lyuma](https://github.com/lyuma/Av3Emulator). (Tip: To debug your FX controller, enable the emulator, enter play mode, select the controller file you intend to debug, and then select the avatar. Leave "Animator To Debug" at Base.)
 
 The merged "ParticleDeath" layer is provided for you in the "FX.controller" as a template. Build your own logic and use this layer to run [Parameter Driver](https://docs.vrchat.com/docs/state-behaviors).
 
