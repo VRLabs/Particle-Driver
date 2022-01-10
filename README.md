@@ -86,7 +86,7 @@ You can grab the latest version of the Particle Driver in [Releases](https://git
 
 ## License
 
-Particle Driver is available as-is under MIT. For more information see [LICENSE](https://github.com/VRLabs/Particle-Driver/blob/dev/LICENSE).
+Particle Driver is available as-is under MIT. For more information see [LICENSE](https://github.com/VRLabs/Particle-Driver/blob/main/LICENSE).
 
 ## Contact us
 
