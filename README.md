@@ -11,19 +11,6 @@
     <img src="https://img.shields.io/badge/Unity-2019.4-green.svg?style=flat-square">
   </a>
   <br />
-  <a href="https://github.com/VRLabs/Particle-Driver/issues">
-    <img src="https://img.shields.io/github/issues-raw/VRLabs/Particle-Driver.svg?style=flat-square">
-  </a>
-  <a href="https://github.com/VRLabs/Particle-Driver/issues?q=is%3Aissue+is%3Aclosed">
-    <img src="https://img.shields.io/github/issues-closed-raw/VRLabs/Particle-Driver.svg?style=flat-square">
-  </a>
-  <a href="https://github.com/VRLabs/Particle-Driver/pull">
-    <img src="https://img.shields.io/github/issues-pr-raw/VRLabs/Particle-Driver.svg?style=flat-square">
-  </a>
-  <a href="https://github.com/VRLabs/Particle-Driver/pulls?q=is%3Apr+is%3Aclosed">
-    <img src="https://img.shields.io/github/issues-pr-closed-raw/VRLabs/Particle-Driver.svg?style=flat-square">
-  </a>
-  <br />
 </div>
 
 ## How it works
