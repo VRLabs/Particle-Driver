@@ -5,7 +5,7 @@
 [![Generic badge](https://img.shields.io/badge/SDK-AvatarSDK3-informational.svg)](https://vrchat.com/home/download)
 [![Generic badge](https://img.shields.io/badge/License-MIT-informational.svg)](https://github.com/VRLabs/Particle-Driver/blob/main/LICENSE)  
 
-A legacy method for animating on particle death that uses [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool).
+A legacy method for animating on particle death that uses the [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool).
 
 ## How it works
 
