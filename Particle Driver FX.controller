@@ -74,7 +74,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FX
+  m_Name: Particle Driver FX
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: IsLocal
@@ -245,24 +245,24 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 4194953532856263201}
-    m_Position: {x: -340, y: 90, z: 0}
+    m_Position: {x: 30, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3563117815169394147}
-    m_Position: {x: -340, y: 300, z: 0}
+    m_Position: {x: 30, y: 390, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6243940165520656584}
-    m_Position: {x: -340, y: 230, z: 0}
+    m_Position: {x: 30, y: 320, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6478639026752812694}
-    m_Position: {x: -340, y: 160, z: 0}
+    m_Position: {x: 30, y: 250, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: -320, y: -50, z: 0}
-  m_EntryPosition: {x: -320, y: 30, z: 0}
-  m_ExitPosition: {x: -320, y: -10, z: 0}
+  m_AnyStatePosition: {x: 50, y: 40, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 50, y: 80, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 4194953532856263201}
 --- !u!1102 &6478639026752812694

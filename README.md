@@ -11,7 +11,7 @@ A legacy method for animating on particle death that uses the [Layer Weight Tool
 
 Here is a map of the hierarchy:
 
-```
+```text
 Your Avatar ("ParticleDeath" layer)
 ...
 - Particle Driver (Stay Active.controller)
@@ -32,12 +32,12 @@ In short: Weight.controller resets and changes a parameter value when the partic
 ## Install guide
 
 Merge the FX controller to your own FX controller, using the [Avatars 3.0 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) tool.
- 
+
 "Particle Driver.prefab" should go to the base of your Unity scene, which will give it base Unity scaling.
 
 Unpack the prefab by right-clicking it.
 
-Remove "Collider" outside of "Particle Driver" and place it in your avatar's hierarchy as needed. 
+Remove "Collider" outside of "Particle Driver" and place it in your avatar's hierarchy as needed.
 
 "Particle System" should remain under "Particle Driver". Place "Particle Driver" anywhere in your avatar's hierarchy, as needed.
 
@@ -47,7 +47,7 @@ Use the [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool/). Open 
 
 ## How to use
 
-Testing in Unity requires the [3.0 emulator by Lyuma](https://github.com/lyuma/Av3Emulator). 
+Testing in Unity requires the [3.0 emulator by Lyuma](https://github.com/lyuma/Av3Emulator).
 
 The merged "ParticleDeath" layer is provided for you in the "FX.controller" as a template. Build your own logic and use this layer to run [Parameter Driver](https://docs.vrchat.com/docs/state-behaviors).
 
