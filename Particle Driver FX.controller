@@ -91,7 +91,7 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: ParticleDeath
+    m_Name: Particle Driver
     m_StateMachine: {fileID: 6357376962166451665}
     m_Mask: {fileID: 0}
     m_Motions: []
@@ -241,7 +241,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ParticleDeath
+  m_Name: Particle Driver
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 4194953532856263201}
