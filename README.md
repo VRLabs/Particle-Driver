@@ -10,7 +10,7 @@
 [![Generic badge](https://img.shields.io/discord/706913824607043605?color=%237289da&label=DISCORD&logo=Discord&style=for-the-badge)](https://discord.vrlabs.dev/)
 [![Generic badge](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dvrlabs%26type%3Dpatrons&style=for-the-badge)](https://patreon.vrlabs.dev/)
 
-A legacy method for animating on particle death that uses the [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool).
+A legacy method for animating on particle death that uses the [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool)
 
 ![Alt text]()
 
@@ -25,33 +25,27 @@ A legacy method for animating on particle death that uses the [Layer Weight Tool
 
 ## How it works
 
-Here is a map of the hierarchy:
-
-```text
-Your Avatar (``ParticleDeath`` layer)
-|-Particle Driver (Stay Active.controller)
-|  |-Particle System (Weight.controller)
-|  |-Collider
-```
-
-* The ``Stay Active.controller`` animates ``Particle System`` on, to re-enable the particle immediately after it's been disabled.
-* The ``Particle System`` object is disabled on collision via [Stop Action](https://docs.unity3d.com/ScriptReference/ParticleSystemStopAction.html). When re-enabled, the ``Weight.controller`` will reset.
-* ``Weight.controller`` uses [Animator Layer Control](https://docs.vrchat.com/docs/state-behaviors) to change the weight of the ``ParticleDeath`` layer based on its weight.
+* The ``Particle Driver Stay Active.controller`` continuously enables ``Particle System`` to re-enable the particle system immediately after it's been disabled.
+* The ``Particle System`` object is disabled on collision via [Stop Action](https://docs.unity3d.com/ScriptReference/ParticleSystemStopAction.html). When re-enabled, the ``Particle Driver Weight.controller`` will reset.
+* ``Weight.controller`` uses [Animator Layer Control](https://docs.vrchat.com/docs/state-behaviors) to change the weight of the ``Particle Driver`` layer based on its weight.
 * The ``ParticleDeath`` parameter value is multiplied by the weight and can be used as a transition condition.
 
 In short: If the particle lives for longer than a few frames, the ParticleDeath parameter gets set to 0.1, otherwise it gets set to 1
+
 ## Install guide
 
 * Merge the Animator Controller ``Particle Driver FX`` to your own FX Controller, using the [Avatars 3.0 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) tool.
 * Drag & drop the ``Particle Driver`` prefab into the base of your Hierarchy.
 * Right click and unpack the prefab, then drag & drop it onto your avatar.
-* Adjust the transforms of ``Particle System`` and ``Collider`` to your taste.
-* In the ``Resources/Animations/Particle Driver Weight`` controller, in the ``Max Weight`` and ``Min Weight`` state, change the ``Index`` to the index of the ``ParticleDeath`` Layer on your FX Controller. (The top layer has index 0, the next index 1, etc.) 
+* Adjust the transforms of ``Particle System`` and ``Collider`` as needed.
+* In the ``Resources/Animations/Particle Driver Weight`` controller, in the ``Max Weight`` and ``Min Weight`` animation state, change the ``Index`` to the index of the ``Particle Driver`` Layer on your FX Controller
+  * The top layer is index 0, the second layer is index 1, etc.
+
 ## How to use
 
 Testing in Unity requires the [3.0 emulator by Lyuma](https://github.com/lyuma/Av3Emulator).
 
-* When the Collider is colliding with the Particle, the ``ParticleDriver/IsColliding`` parameter will be set to True, otherwise, it will be set to False.
+* When the Collider is colliding with the Particle, the ``ParticleDriver/IsColliding`` parameter will be set to ``True``, otherwise, it will be set to ``False``.
 
 ## Performance stats
 
@@ -76,7 +70,7 @@ Particle Driver
 
 ## License
 
-IsRendering Detection is available as-is under MIT. For more information see [LICENSE](https://github.com/VRLabs/Particle-Driver/blob/main/LICENSE).
+Particle Driver is available as-is under MIT. For more information see [LICENSE](https://github.com/VRLabs/Particle-Driver/blob/main/LICENSE).
 
 ​
 
