@@ -34,6 +34,8 @@ In short: If the particle lives for longer than a few frames, the ParticleDeath 
 
 ## Install guide
 
+https://github.com/VRLabs/Particle-Driver/assets/76777936/6733fdd6-53b6-43ad-90cd-a43dea06bacc
+
 * Merge the Animator Controller ``Particle Driver FX`` to your own FX Controller, using the [Avatars 3.0 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) tool.
 * Drag & drop the ``Particle Driver`` prefab into the base of your Hierarchy.
 * Right click and unpack the prefab, then drag & drop it onto your avatar.
