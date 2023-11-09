@@ -14,7 +14,7 @@ A legacy method for animating on particle death that uses the [Layer Weight Tool
 
 ![Alt text]()
 
-### ⬇️ [Download latest Unitypackage](https://github.com/VRLabs/Particle-Driver/releases/latest)
+### ⬇️ [Download Latest Version](https://github.com/VRLabs/Particle-Driver/releases/latest)
 
 <!-- 
 ### 📦 [Add to VRChat Creator Companion]() -->
