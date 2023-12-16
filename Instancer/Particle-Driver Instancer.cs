@@ -18,7 +18,7 @@ namespace VRLabs.ParticleDriver
 			"package.json"
 		};
 
-		[MenuItem("VRLabs/Particle Driver")]
+		[MenuItem("VRLabs/Create Instance/Particle Driver")]
 		public static void FancyPackage()
 		{
 			Type instancerType = AppDomain.CurrentDomain.GetAssemblies()
