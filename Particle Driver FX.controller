@@ -36,7 +36,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: ParticleDeath
+    m_ConditionEvent: ParticleDriver/Death
     m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3563117815169394147}
@@ -95,7 +95,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: ParticleDeath
+  - m_Name: ParticleDriver/Death
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -156,10 +156,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: ParticleDeath
+    m_ConditionEvent: ParticleDriver/Death
     m_EventTreshold: 0
   - m_ConditionMode: 4
-    m_ConditionEvent: ParticleDeath
+    m_ConditionEvent: ParticleDriver/Death
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6243940165520656584}
@@ -184,7 +184,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: ParticleDeath
+    m_ConditionEvent: ParticleDriver/Death
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6243940165520656584}
