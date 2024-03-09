@@ -12,12 +12,7 @@
 
 A legacy method for animating on particle death that uses the [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool)
 
-![Alt text]()
-
-### ⬇️ [Download Latest Version](https://github.com/VRLabs/Particle-Driver/releases/latest)
-
-<!-- 
-### 📦 [Add to VRChat Creator Companion]() -->
+## This package is depreated! [Get the new version here]()
 
 </div>
 
@@ -29,8 +24,6 @@ A legacy method for animating on particle death that uses the [Layer Weight Tool
 * The ``Particle System`` object is disabled on collision via [Stop Action](https://docs.unity3d.com/ScriptReference/ParticleSystemStopAction.html). When re-enabled, the ``Particle Driver Weight.controller`` will reset.
 * ``Weight.controller`` uses [Animator Layer Control](https://docs.vrchat.com/docs/state-behaviors) to change the weight of the ``Particle Driver`` layer based on its weight.
 * The ``ParticleDeath`` parameter value is multiplied by the weight and can be used as a transition condition.
-
-In short: If the particle lives for longer than a few frames, the ParticleDeath parameter gets set to 0.1, otherwise it gets set to 1
 
 ## Install guide
 
@@ -44,8 +37,6 @@ https://github.com/VRLabs/Particle-Driver/assets/76777936/6733fdd6-53b6-43ad-90c
   * The top layer is index 0, the second layer is index 1, etc.
 
 ## How to use
-
-Testing in Unity requires the [3.0 emulator by Lyuma](https://github.com/lyuma/Av3Emulator).
 
 * When the Collider is colliding with the Particle, the ``ParticleDriver/IsColliding`` parameter will be set to ``True``, otherwise, it will be set to ``False``.
 
