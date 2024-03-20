@@ -12,7 +12,7 @@
 
 A legacy method for animating on particle death that uses the [Layer Weight Tool](https://github.com/VRLabs/Layer-Weight-Tool)
 
-## This package is depreated! If you want to drive a parameter on world or player collision, [get the new package here](https://github.com/hfcRed/collision-detection)
+## This package is depreated! If you want to drive a parameter on world or player collision, [get the new package here](https://github.com/VRLabs/Collision-Detection)
 
 </div>
 
